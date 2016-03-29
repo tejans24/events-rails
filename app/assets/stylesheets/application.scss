@@ -15,5 +15,8 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+//layout css
+@import "layouts/footer.scss";
+
 //importing dependent css files
 @import "home.scss";
