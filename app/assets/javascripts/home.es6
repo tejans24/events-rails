@@ -1,19 +1,13 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+class Language {
+  constructor(name, founder, year) {
+    this.name = name;
+    this.founder = founder;
+    this.year = year;
+  }
+  summary() {
+    return this.name + " was created by " + this.founder + " in " + this.year;
+  }
+}
 
-class Person
-  constructor: (@firstName, @lastName) ->
-
-  name: ->
-    "#{@first_name} #{@last_name}"
-
-  setName: (name) ->
-    names = name.split " "
-
-    @firstName = names[0]
-    @lastName = names[1]
-
-blake = new Person "Blake", "Williams"
-blake.setName("Blake Anderson")
-console.log blake.name()
+var language = new Language("English", "Teja", 1999)
+console.log(language.summary())
