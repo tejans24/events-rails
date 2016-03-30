@@ -34,10 +34,14 @@ ActiveRecord::Schema.define(version: 20160329142841) do
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.string   "username"
+    t.string   "first_name"
+    t.string   "last_name"
   end
 
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
   add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["first_name"], name: "index_users_on_first_name"
+  add_index "users", ["last_name"], name: "index_users_on_last_name"
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   add_index "users", ["unlock_token"], name: "index_users_on_unlock_token", unique: true
   add_index "users", ["username"], name: "index_users_on_username", unique: true

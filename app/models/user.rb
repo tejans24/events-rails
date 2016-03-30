@@ -6,4 +6,8 @@ class User < ActiveRecord::Base
 
   validates :username, presence: true, length: { minimum: 4,
 maximum: 16 }
+  validates :first_name, presence: true, length: { minimum: 2,
+  maximum: 16 }
+  validates :last_name, presence: true, length: { minimum: 2,
+  maximum: 16 }
 end

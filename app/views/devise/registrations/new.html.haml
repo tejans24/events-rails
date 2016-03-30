@@ -10,6 +10,14 @@
     %br/
     = f.text_field :username
   .field
+    = f.label :first_name
+    %br/
+    = f.text_field :first_name
+  .field
+    = f.label :last_name
+    %br/
+    = f.text_field :last_name
+  .field
     = f.label :password
     - if @minimum_password_length
       %em
