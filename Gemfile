@@ -34,6 +34,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'sprockets'
 gem 'sprockets-es6'
+gem 'autoprefixer-rails'
 
 gem 'haml'
 
