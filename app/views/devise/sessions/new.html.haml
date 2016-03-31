@@ -2,6 +2,10 @@
 
 .section--login
   %h2.login--header Log in
+  = link_to user_omniauth_authorize_path(:facebook), class: 'btn btn-block btn-social btn-lg btn-facebook' do
+    Signup with Facebook
+    %i.fa.fa-facebook
+  %h5.login--or OR
   = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
     .field
       = f.label :email, class: 'sr-only'
@@ -17,7 +21,4 @@
         = f.label :remember_me
     .actions
       = f.submit "Log in", :class => "btn btn-lg btn-primary btn-block"
-      = link_to user_omniauth_authorize_path(:facebook), class: 'btn btn-block btn-social btn-lg btn-facebook' do
-        Signup with Facebook
-        %i.fa.fa-facebook
   = render "devise/shared/links"
