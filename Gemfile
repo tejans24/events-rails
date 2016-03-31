@@ -36,10 +36,12 @@ gem 'sprockets'
 gem 'sprockets-es6'
 gem 'autoprefixer-rails'
 
+#templating language for rails views
 gem 'haml'
 
 #auth
 gem 'devise'
+gem 'omniauth-facebook'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
