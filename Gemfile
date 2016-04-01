@@ -39,6 +39,10 @@ gem 'autoprefixer-rails'
 #templating language for rails views
 gem 'haml'
 
+#assets and styles
+gem 'bootstrap-social-rails'
+gem 'font-awesome-rails'
+
 #auth
 gem 'devise'
 gem 'omniauth-facebook'

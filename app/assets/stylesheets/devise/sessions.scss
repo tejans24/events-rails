@@ -1,0 +1,39 @@
+.section--login {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+
+  .login--or {
+    text-align: center;
+  }
+
+  .form-control{
+    height: auto;
+    position: relative;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .login--header {
+    margin-bottom: 10px;
+  }
+
+  .login--remember-me {
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
+
+  input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
